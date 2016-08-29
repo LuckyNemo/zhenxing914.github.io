@@ -16,6 +16,7 @@ GEM
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
     ffi (1.9.14)
+    ffi (1.9.14-x64-mingw32)
     forwardable-extended (2.6.0)
     jekyll (3.2.1)
       colorator (~> 1.0)
@@ -56,6 +57,7 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
   compass
