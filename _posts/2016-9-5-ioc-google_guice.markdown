@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "google guice 用法介绍"
+date:   2016/9/5 17:45:21 
+---
+
 #google guice 用法介绍
 
 ##TransactionLog.java
