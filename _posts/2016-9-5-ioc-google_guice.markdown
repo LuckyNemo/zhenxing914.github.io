@@ -4,36 +4,36 @@ title:  "google guice 用法介绍"
 date:   2016/9/5 17:45:21 
 ---
 
-#google guice 用法介绍#
+# google guice 用法介绍 #
 
-##TransactionLog.java 
+## TransactionLog.java ## 
     public class TransactionLog {
     	public void print_info(){
     		System.out.println("this is TransactionLog!");
     	}
     }
 
-##CreditCardProcessor.java ##
+## CreditCardProcessor.java ##
     public class CreditCardProcessor {
     	public void print_info(){
     		System.out.println("this is TransactionLog!");
     	}
     }
 
-##DatabaseTransactionLog.java ##
+## DatabaseTransactionLog.java ##
     public class DatabaseTransactionLog extends TransactionLog{
     	public void print_info(){
         	System.out.println("DatabaseTransactionLog");
     	}
 	}
 
-##PaypalCreditCardProcessor.java ##
+## PaypalCreditCardProcessor.java ##
 	public class PaypalCreditCardProcessor extends CreditCardProcessor{
     	public void print_info(){
         	System.out.println("PaypalCreaditCardProcessor!");
     	}
 	}
-##RealBillingService.java ##
+## RealBillingService.java ##
     	class RealBillingService {
     	private final CreditCardProcessor processor;
     	private final TransactionLog transactionLog;
@@ -52,7 +52,7 @@ date:   2016/9/5 17:45:21
     
     	}
 
-##BillingModule.java ##
+## BillingModule.java ##
 	package Ioc_guice;
 
 	import com.google.inject.AbstractModule;
