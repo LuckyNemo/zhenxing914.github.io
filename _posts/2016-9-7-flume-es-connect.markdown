@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "flume数据收集存储到ealsticsearch "
+date:   2016/9/7 15:13:35 
+---
+
+
 # flume1.6收集日志传输到elasticsearch2.3.4存储 #
 
 ## 本文的配置 ##
