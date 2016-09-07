@@ -6,7 +6,7 @@ date:   2016/9/5 17:45:21
 
 #google guice 用法介绍
 
-##TransactionLog.java
+## TransactionLog.java 
 
     public class TransactionLog {
     	public void print_info(){
@@ -14,46 +14,46 @@ date:   2016/9/5 17:45:21
     	}
     }
 
-##CreditCardProcessor.java
+## CreditCardProcessor.java ##
     public class CreditCardProcessor {
     	public void print_info(){
     		System.out.println("this is TransactionLog!");
     	}
     }
-    
-##DatabaseTransactionLog.java
+
+## DatabaseTransactionLog.java ##
     public class DatabaseTransactionLog extends TransactionLog{
     	public void print_info(){
         	System.out.println("DatabaseTransactionLog");
     	}
 	}
 
-##PaypalCreditCardProcessor
+## PaypalCreditCardProcessor ##
 	public class PaypalCreditCardProcessor extends CreditCardProcessor{
     	public void print_info(){
         	System.out.println("PaypalCreaditCardProcessor!");
     	}
 	}
-##RealBillingService.java
-	class RealBillingService {
+## RealBillingService.java ##
+    	class RealBillingService {
     	private final CreditCardProcessor processor;
     	private final TransactionLog transactionLog;
-
+    
     	@Inject
     	RealBillingService(CreditCardProcessor processor,
-                       TransactionLog transactionLog) {
-        		this.processor = processor;
-        		this.transactionLog = transactionLog;
+       TransactionLog transactionLog) {
+    		this.processor = processor;
+    		this.transactionLog = transactionLog;
     	}
-
+    
     	public void chargeOrder() {
-        	processor.print_info();
-        	transactionLog.print_info();
+    	processor.print_info();
+    	transactionLog.print_info();
+    	}
+    
     	}
 
-	}
-
-##BillingModule
+## BillingModule ##
 	package Ioc_guice;
 
 	import com.google.inject.AbstractModule;
