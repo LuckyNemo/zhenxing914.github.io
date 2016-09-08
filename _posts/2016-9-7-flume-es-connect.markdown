@@ -193,11 +193,14 @@ Elasticsearch >= 2.0
 
 ### Build ###
 
-Build standard jar by the following command 
+Build standard jar by the following command
+
     $ ./gradlew build
+
 Build fat jar which contains elasticsearch dependencies
 
     $ ./gradlew assembly
+
 Jar will be generated in build/libs
 
 ### Usage ###
