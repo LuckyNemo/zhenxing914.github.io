@@ -199,6 +199,7 @@ Build standard jar by the following command
 
 Build fat jar which contains elasticsearch dependencies
 
+
     $ ./gradlew assembly
 
 Jar will be generated in build/libs
